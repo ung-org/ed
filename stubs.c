@@ -19,17 +19,17 @@
 
 #include "ed.h"
 
-void ed_delete(intmax_t start, intmax_t end, const char *arg) { }
+void ed_delete(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
 
-void ed_join(intmax_t start, intmax_t end, const char *arg) { }
-void ed_mark(intmax_t start, intmax_t end, const char *arg) { }
-void ed_list(intmax_t start, intmax_t end, const char *arg) { }
-void ed_move(intmax_t start, intmax_t end, const char *arg) { }
-void ed_number(intmax_t start, intmax_t end, const char *arg) { }
+void ed_join(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
+void ed_mark(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
+void ed_list(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
+void ed_move(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
+void ed_number(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
 
-void ed_copy(intmax_t start, intmax_t end, const char *arg) { }
-void ed_undo(intmax_t start, intmax_t end, const char *arg) { }
+void ed_copy(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
+void ed_undo(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
 
-void ed_line_number(intmax_t start, intmax_t end, const char *arg) { }
-void ed_shell_escape(intmax_t start, intmax_t end, const char *arg) { }
-void ed_null(intmax_t start, intmax_t end, const char *arg) { }
+void ed_line_number(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
+void ed_shell_escape(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
+void ed_null(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }

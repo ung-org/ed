@@ -19,10 +19,10 @@
 
 #include "ed.h"
 
-void ed_global(intmax_t start, intmax_t end, const char *arg) { }
-void ed_Global(intmax_t start, intmax_t end, const char *arg) { }
+void ed_global(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
+void ed_Global(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
 
-void ed_substitute(intmax_t start, intmax_t end, const char *arg) { }
+void ed_substitute(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
 
-void ed_global_non_matched(intmax_t start, intmax_t end, const char *arg) { }
-void ed_Global_non_matched(intmax_t start, intmax_t end, const char *arg) { }
+void ed_global_non_matched(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
+void ed_Global_non_matched(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }

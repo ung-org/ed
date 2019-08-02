@@ -4,7 +4,7 @@
 
 default: all
 
-CFLAGS=-g -Wall -Wextra -Wpedantic -Werror -Wno-unused-parameter
+CFLAGS=-g -Wall -Wextra -Wpedantic -Werror
 UTILITY=ed
 SOURCES=ed.c commands.c stubs.c env.c io.c signals.c input.c re.c
 HEADERS=ed.h

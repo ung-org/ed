@@ -25,6 +25,7 @@
 
 void ed_sigint(int sig)
 {
+	(void)sig;
 }
 
 void ed_sighup(int sig)

@@ -49,11 +49,12 @@ static struct ed_line *ed_input(void)
 	return head;
 }
 
-void ed_append(intmax_t start, intmax_t end, const char *arg) { }
-void ed_change(intmax_t start, intmax_t end, const char *arg) { }
+void ed_append(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
+void ed_change(intmax_t start, intmax_t end, const char *arg) { (void)start; (void)end; (void)arg; }
 
 void ed_insert(intmax_t start, intmax_t end, const char *arg)
 {
+	(void)start; (void)end; (void)arg;
 	struct ed_line *input = ed_input();
 	insque(input, ed_state.current);
 }

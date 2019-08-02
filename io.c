@@ -63,6 +63,7 @@ void ed_Edit(intmax_t start, intmax_t end, const char *arg)
 
 void ed_print(intmax_t start, intmax_t end, const char *arg)
 {
+	(void)start; (void)end; (void)arg;
 	fputs(ed_state.current->text, stdout);
 }
 
@@ -77,11 +78,13 @@ void ed_quit(intmax_t start, intmax_t end, const char *arg)
 
 void ed_Quit(intmax_t start, intmax_t end, const char *arg)
 {
+	(void)start; (void)end; (void)arg;
 	exit(0);
 }
 
 void ed_read(intmax_t start, intmax_t end, const char *arg)
 {
+	(void)start; (void)end;
 	intmax_t total = 0;
 	FILE *f = NULL;
 
@@ -133,6 +136,7 @@ void ed_read(intmax_t start, intmax_t end, const char *arg)
 
 void ed_write(intmax_t start, intmax_t end, const char *arg)
 {
+	(void)start; (void)end;
 	intmax_t total = 0;
 	FILE *f = NULL;
 

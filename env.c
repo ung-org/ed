@@ -53,6 +53,7 @@ void ed_error(const char *fmt, ...)
 
 void ed_filename(intmax_t start, intmax_t end, const char *arg)
 {
+	(void)start; (void)end;
 	if (ed_state.filename) {
 		free(ed_state.filename);
 	}
@@ -62,6 +63,7 @@ void ed_filename(intmax_t start, intmax_t end, const char *arg)
 
 void ed_help(intmax_t start, intmax_t end, const char *arg)
 {
+	(void)start; (void)end; (void)arg;
 	if (ed_state.help) {
 		puts(ed_state.help);
 	}
@@ -77,6 +79,7 @@ void ed_help_mode(intmax_t start, intmax_t end, const char *arg)
 
 void ed_prompt(intmax_t start, intmax_t end, const char *arg)
 {
+	(void)start; (void)end; (void)arg;
 	if (ed_state.prompt == NULL) {
 		ed_state.prompt = "*";
 	}
