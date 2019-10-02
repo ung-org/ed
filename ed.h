@@ -1,3 +1,6 @@
+#ifndef ED_H
+#define ED_H
+
 /*
  * UNG's Not GNU
  *
@@ -101,3 +104,5 @@ void ed_write(intmax_t start, intmax_t end, const char *arg);
 void ed_line_number(intmax_t start, intmax_t end, const char *arg);
 void ed_shell_escape(intmax_t start, intmax_t end, const char *arg);
 void ed_null(intmax_t start, intmax_t end, const char *arg);
+
+#endif
