@@ -13,6 +13,7 @@ L10N=
 all: $(UTILITY) $(L10N)
 
 $(UTILITY): $(OBJECTS) $(HEADERS)
+	$(CC) -o $@ $(OBJECTS)
 
 .msg.cat:
 	gencat $@ $<
